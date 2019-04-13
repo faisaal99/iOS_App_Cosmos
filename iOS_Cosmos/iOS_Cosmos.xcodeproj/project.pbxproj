@@ -12,6 +12,7 @@
 		87A8362F2238577B0039AC2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A8362D2238577B0039AC2D /* Main.storyboard */; };
 		87A836312238577C0039AC2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A836302238577C0039AC2D /* Assets.xcassets */; };
 		87A836342238577C0039AC2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A836322238577C0039AC2D /* LaunchScreen.storyboard */; };
+		87CDC7E522622F99003EF0EA /* MainMenuPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CDC7E422622F99003EF0EA /* MainMenuPageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		87A836302238577C0039AC2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87A836332238577C0039AC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87A836352238577C0039AC2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87CDC7E422622F99003EF0EA /* MainMenuPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuPageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		87A836282238577B0039AC2D /* iOS_Cosmos */ = {
 			isa = PBXGroup;
 			children = (
+				87A836352238577C0039AC2D /* Info.plist */,
 				87A8363F223857CE0039AC2D /* Supporting Files */,
 				87A8363D2238579F0039AC2D /* Controller */,
 				87A8363C223857990039AC2D /* Model */,
@@ -84,6 +87,7 @@
 			children = (
 				87A836292238577B0039AC2D /* AppDelegate.swift */,
 				87A8362B2238577B0039AC2D /* ViewController.swift */,
+				87CDC7E422622F99003EF0EA /* MainMenuPageController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -91,7 +95,6 @@
 		87A8363F223857CE0039AC2D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				87A836352238577C0039AC2D /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				TargetAttributes = {
 					87A836252238577B0039AC2D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -169,6 +173,7 @@
 			files = (
 				87A8362C2238577B0039AC2D /* ViewController.swift in Sources */,
 				87A8362A2238577B0039AC2D /* AppDelegate.swift in Sources */,
+				87CDC7E522622F99003EF0EA /* MainMenuPageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +327,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sti.iOS-Cosmos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -339,7 +344,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sti.iOS-Cosmos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
