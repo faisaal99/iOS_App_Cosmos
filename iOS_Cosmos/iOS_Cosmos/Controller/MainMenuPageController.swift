@@ -8,22 +8,69 @@
 
 import UIKit
 
-class MainMenuPageController: UIPageViewController {
-
+class MainMenuPageController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+    
+    // The view-controllers inside an array of UIViewControllers
+    lazy var orderedViewControllers: [UIViewController] = {
+        return [self.newVC(viewController: "Sun"),
+                self.newVC(viewController: "Mercury"),
+                self.newVC(viewController: "Venus"),
+                self.newVC(viewController: "Earth"),
+                self.newVC(viewController: "Mars"),
+                self.newVC(viewController: "Jupiter"),
+                self.newVC(viewController: "Saturn"),
+                self.newVC(viewController: "Uranus"),
+                self.newVC(viewController: "Neptune"),
+                self.newVC(viewController: "Pluto")]
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.dataSource = self
+        if let firstViewController = orderedViewControllers.first {
+            setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
+        }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func newVC(viewController: String) -> UIViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: viewController)
     }
-    */
-
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        guard let viewControllerIndex = orderedViewControllers.firstIndex(of: viewController) else {
+            return nil
+        }
+        
+        let previousIndex = viewControllerIndex - 1
+        
+        guard previousIndex >= 0 else {
+            return orderedViewControllers.last
+        }
+        
+        guard orderedViewControllers.count > previousIndex else {
+            return nil
+        }
+        
+        return orderedViewControllers[previousIndex]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let viewControllerIndex = orderedViewControllers.firstIndex(of: viewController) else {
+            return nil
+        }
+        
+        let nextIndex = viewControllerIndex + 1
+        
+        guard orderedViewControllers.count != nextIndex else {
+            return orderedViewControllers.first
+        }
+        
+        guard orderedViewControllers.count > nextIndex else {
+            return nil
+        }
+        
+        return orderedViewControllers[nextIndex]
+    }
+    
 }

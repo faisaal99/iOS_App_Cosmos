@@ -18,21 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COSMOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtK-uD-hhF">
-                                <rect key="frame" x="100.5" y="309.5" width="174" height="48"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cosmos" translatesAutoresizingMaskIntoConstraints="NO" id="u7S-3B-1kh">
+                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="aIT-D8-oWy"/>
-                                    <constraint firstAttribute="width" constant="174" id="nEZ-E3-yqQ"/>
+                                    <constraint firstAttribute="width" constant="240" id="Oo0-99-03k"/>
+                                    <constraint firstAttribute="height" constant="128" id="TRJ-fM-uq5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Solar System in Your Hand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFk-Gy-EKZ">
+                                <rect key="frame" x="0.0" y="403.5" width="375" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="XIx-Gy-KeO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="CtK-uD-hhF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mQu-ql-NM0"/>
-                            <constraint firstItem="CtK-uD-hhF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uRZ-VJ-eBe"/>
+                            <constraint firstItem="HFk-Gy-EKZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6pd-qO-pQX"/>
+                            <constraint firstItem="HFk-Gy-EKZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QdE-AQ-ubh"/>
+                            <constraint firstItem="u7S-3B-1kh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="SBH-KT-AYb"/>
+                            <constraint firstItem="HFk-Gy-EKZ" firstAttribute="top" secondItem="u7S-3B-1kh" secondAttribute="bottom" constant="6" id="gqH-Ln-VaE"/>
+                            <constraint firstItem="u7S-3B-1kh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iHR-I0-Xbv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HFk-Gy-EKZ" secondAttribute="trailing" id="v1j-Pq-LfF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -42,4 +52,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cosmos" width="381" height="151"/>
+    </resources>
 </document>
