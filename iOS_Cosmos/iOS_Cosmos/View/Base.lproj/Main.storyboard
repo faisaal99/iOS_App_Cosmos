@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i8e-U1-Wwk">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Cosmos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g64-Yc-x7o">
-                                <rect key="frame" x="0.0" y="522" width="414" height="36"/>
+                                <rect key="frame" x="0.0" y="487.5" width="375" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="DHw-iW-GZd"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cosmos" translatesAutoresizingMaskIntoConstraints="NO" id="fMh-Hg-HQC">
-                                <rect key="frame" x="87" y="304" width="240" height="128"/>
+                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="TFG-s3-ZS5"/>
                                     <constraint firstAttribute="width" constant="240" id="sN7-ur-2eP"/>
@@ -67,44 +67,19 @@
             </objects>
             <point key="canvasLocation" x="809" y="-657"/>
         </scene>
-        <!--View Controller Test-->
-        <scene sceneID="H4E-Ej-88s">
-            <objects>
-                <viewController id="Mfv-2h-Bs0" customClass="ViewControllerTest" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0Gm-Gc-yZm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsU-Id-7D8">
-                                <rect key="frame" x="191" y="353" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Quiz"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="qi5-Dz-s1X"/>
-                    </view>
-                    <connections>
-                        <outlet property="QuizBtn" destination="KsU-Id-7D8" id="QNE-Tl-8Rx"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RJi-6g-2Xj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1609" y="-786"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="MqB-wH-TOA">
             <objects>
                 <viewController storyboardIdentifier="Earth" id="N8R-Hi-oa1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yyj-6j-CPR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth1" translatesAutoresizingMaskIntoConstraints="NO" id="Gue-Rn-Lll">
-                                <rect key="frame" x="10" y="158" width="394" height="428"/>
+                                <rect key="frame" x="10" y="158" width="355" height="359"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbX-jH-2p2">
-                                <rect key="frame" x="0.0" y="70" width="414" height="48"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="ThQ-Xy-EQf"/>
                                 </constraints>
@@ -137,11 +112,11 @@
             <objects>
                 <viewController storyboardIdentifier="Venus" id="AUw-fA-aLh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wuV-tC-Tdg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="venus1" translatesAutoresizingMaskIntoConstraints="NO" id="A0U-R5-E2l">
-                                <rect key="frame" x="10" y="158" width="394" height="428"/>
+                                <rect key="frame" x="10" y="158" width="355" height="359"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Venus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qv-Ng-gxF">
                                 <rect key="frame" x="0.0" y="72" width="414" height="48"/>
@@ -177,14 +152,14 @@
             <objects>
                 <viewController storyboardIdentifier="Mercury" id="qzS-ad-Dq0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v0g-t5-eXg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mercury1" translatesAutoresizingMaskIntoConstraints="NO" id="iqW-UN-iDn">
-                                <rect key="frame" x="10" y="158" width="394" height="428"/>
+                                <rect key="frame" x="10" y="158" width="355" height="359"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercury" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLa-9e-SeT">
-                                <rect key="frame" x="0.0" y="70" width="414" height="48"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="azB-kZ-2mm"/>
                                 </constraints>
@@ -217,14 +192,14 @@
             <objects>
                 <viewController storyboardIdentifier="Sun" id="Y0j-iJ-xGc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygq-ba-miR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun1" translatesAutoresizingMaskIntoConstraints="NO" id="jm3-X7-JdK">
-                                <rect key="frame" x="10" y="158" width="394" height="428"/>
+                                <rect key="frame" x="10" y="158" width="355" height="359"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zT-d1-Vhb">
-                                <rect key="frame" x="0.0" y="70" width="414" height="48"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="AVw-Qh-JNM"/>
                                 </constraints>
@@ -257,14 +232,14 @@
             <objects>
                 <viewController storyboardIdentifier="Mars" id="6Ji-od-pO2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d16-h5-jxa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mars1" translatesAutoresizingMaskIntoConstraints="NO" id="l4k-hn-5jV">
-                                <rect key="frame" x="10" y="158" width="394" height="428"/>
+                                <rect key="frame" x="10" y="158" width="355" height="359"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mars" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IU8-9N-siW">
-                                <rect key="frame" x="0.0" y="70" width="414" height="48"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="pfM-KO-GhW"/>
                                 </constraints>
@@ -297,14 +272,14 @@
             <objects>
                 <viewController storyboardIdentifier="Jupiter" id="jvm-Gs-tRE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fw5-U8-vAf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jupiter1" translatesAutoresizingMaskIntoConstraints="NO" id="dsp-PP-gGD">
-                                <rect key="frame" x="10" y="158" width="394" height="428"/>
+                                <rect key="frame" x="10" y="158" width="355" height="359"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jupiter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UI0-I5-xXs">
-                                <rect key="frame" x="0.0" y="70" width="414" height="48"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="W9u-Kc-BL6"/>
                                 </constraints>
@@ -332,34 +307,169 @@
             </objects>
             <point key="canvasLocation" x="809" y="704"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="oFM-mN-m0f">
             <objects>
-                <viewController id="i8e-U1-Wwk" sceneMemberID="viewController">
+                <viewController id="i8e-U1-Wwk" customClass="QuizViewController" customModule="iOS_Cosmos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3PV-zv-WrT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sld-do-7mW">
+                                <rect key="frame" x="0.0" y="70" width="375" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="eS0-rW-byd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHo-Wv-JrC">
+                                <rect key="frame" x="20" y="330" width="335" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="L6m-Nb-MNK"/>
+                                </constraints>
+                                <state key="normal" title="Answer 1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerPressed:" destination="i8e-U1-Wwk" eventType="touchUpInside" id="UuF-hk-Jhl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ore-Qi-63m">
+                                <rect key="frame" x="20" y="396" width="335" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="eOZ-Ff-diN"/>
+                                </constraints>
+                                <state key="normal" title="Answer 2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerPressed:" destination="i8e-U1-Wwk" eventType="touchUpInside" id="BbG-m7-hNG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yB2-k2-3VP">
+                                <rect key="frame" x="20" y="528" width="335" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Tkq-Y2-OyQ"/>
+                                </constraints>
+                                <state key="normal" title="Answer 4">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerPressed:" destination="i8e-U1-Wwk" eventType="touchUpInside" id="YmC-sP-Gbu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYG-7K-oOJ">
+                                <rect key="frame" x="20" y="614" width="335" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="t0p-KZ-RA9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000000000000004" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrN-Th-Qen">
+                                <rect key="frame" x="20" y="462" width="335" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Kp7-dg-ByN"/>
+                                </constraints>
+                                <state key="normal" title="Answer 3">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerPressed:" destination="i8e-U1-Wwk" eventType="touchUpInside" id="0Hf-PM-Dmg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sld-do-7mW" firstAttribute="trailing" secondItem="lKe-9y-t0N" secondAttribute="trailing" id="5w9-nS-PcJ"/>
+                            <constraint firstItem="AHo-Wv-JrC" firstAttribute="top" secondItem="sld-do-7mW" secondAttribute="bottom" constant="120" id="6lT-5r-biK"/>
+                            <constraint firstItem="lKe-9y-t0N" firstAttribute="trailing" secondItem="AHo-Wv-JrC" secondAttribute="trailing" constant="20" id="8N2-fo-hAz"/>
+                            <constraint firstItem="hYG-7K-oOJ" firstAttribute="top" secondItem="yB2-k2-3VP" secondAttribute="bottom" constant="30" id="9bs-Sh-eNg"/>
+                            <constraint firstItem="lKe-9y-t0N" firstAttribute="trailing" secondItem="yB2-k2-3VP" secondAttribute="trailing" constant="20" id="AUw-jX-7CE"/>
+                            <constraint firstItem="sld-do-7mW" firstAttribute="top" secondItem="lKe-9y-t0N" secondAttribute="top" constant="50" id="I37-dy-DHd"/>
+                            <constraint firstItem="sld-do-7mW" firstAttribute="leading" secondItem="lKe-9y-t0N" secondAttribute="leading" id="Pag-rj-5Os"/>
+                            <constraint firstItem="BrN-Th-Qen" firstAttribute="leading" secondItem="lKe-9y-t0N" secondAttribute="leading" constant="20" id="ST0-j3-jbd"/>
+                            <constraint firstItem="Ore-Qi-63m" firstAttribute="leading" secondItem="lKe-9y-t0N" secondAttribute="leading" constant="20" id="Sd6-DP-Dd7"/>
+                            <constraint firstItem="Ore-Qi-63m" firstAttribute="top" secondItem="AHo-Wv-JrC" secondAttribute="bottom" constant="10" id="W5R-d1-Zbm"/>
+                            <constraint firstItem="BrN-Th-Qen" firstAttribute="top" secondItem="Ore-Qi-63m" secondAttribute="bottom" constant="10" id="bBq-3T-3ud"/>
+                            <constraint firstItem="yB2-k2-3VP" firstAttribute="leading" secondItem="lKe-9y-t0N" secondAttribute="leading" constant="20" id="bVb-3s-jM8"/>
+                            <constraint firstItem="lKe-9y-t0N" firstAttribute="trailing" secondItem="hYG-7K-oOJ" secondAttribute="trailing" constant="20" id="rck-FN-IxG"/>
+                            <constraint firstItem="hYG-7K-oOJ" firstAttribute="leading" secondItem="lKe-9y-t0N" secondAttribute="leading" constant="20" id="trj-WS-Lxp"/>
+                            <constraint firstItem="lKe-9y-t0N" firstAttribute="trailing" secondItem="Ore-Qi-63m" secondAttribute="trailing" constant="20" id="vJj-yd-Ulf"/>
+                            <constraint firstItem="AHo-Wv-JrC" firstAttribute="leading" secondItem="lKe-9y-t0N" secondAttribute="leading" constant="20" id="vi8-40-Xsc"/>
+                            <constraint firstItem="yB2-k2-3VP" firstAttribute="top" secondItem="BrN-Th-Qen" secondAttribute="bottom" constant="10" id="wfi-lW-XTd"/>
+                            <constraint firstItem="lKe-9y-t0N" firstAttribute="trailing" secondItem="BrN-Th-Qen" secondAttribute="trailing" constant="20" id="yNA-aV-MSC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lKe-9y-t0N"/>
                     </view>
+                    <connections>
+                        <outlet property="btnAnswer1" destination="AHo-Wv-JrC" id="Yfd-O3-q58"/>
+                        <outlet property="btnAnswer2" destination="Ore-Qi-63m" id="fo1-Ao-jJ7"/>
+                        <outlet property="btnAnswer3" destination="BrN-Th-Qen" id="qXn-WW-g69"/>
+                        <outlet property="btnAnswer4" destination="yB2-k2-3VP" id="q8h-JG-sSv"/>
+                        <outlet property="lblProgress" destination="hYG-7K-oOJ" id="Daz-WT-Y8T"/>
+                        <outlet property="lblQuestion" destination="sld-do-7mW" id="GWE-Oy-Xw2"/>
+                        <segue destination="vCE-cI-rw5" kind="show" identifier="quizFinished" id="au4-94-Zk3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vl9-K7-Wn8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1171" y="1502"/>
+            <point key="canvasLocation" x="808.69565217391312" y="1519.5652173913045"/>
+        </scene>
+        <!--Leaderboard View Controller-->
+        <scene sceneID="Drz-ac-jFs">
+            <objects>
+                <viewController id="vCE-cI-rw5" customClass="LeaderboardViewController" customModule="iOS_Cosmos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p1p-D9-fwh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You got 10/10 correct!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF6-wJ-4qB">
+                                <rect key="frame" x="16" y="50" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="uxM-Ss-5pB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IF6-wJ-4qB" firstAttribute="leading" secondItem="Bol-8H-3H4" secondAttribute="leading" constant="16" id="Ewr-Ti-0yk"/>
+                            <constraint firstItem="IF6-wJ-4qB" firstAttribute="top" secondItem="Bol-8H-3H4" secondAttribute="top" constant="30" id="Oz5-3Z-IVl"/>
+                            <constraint firstItem="Bol-8H-3H4" firstAttribute="trailing" secondItem="IF6-wJ-4qB" secondAttribute="trailing" constant="16" id="exD-rI-2Ho"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bol-8H-3H4"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblCorrectAnswers" destination="IF6-wJ-4qB" id="hzu-yo-DCq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kL9-ox-3AG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602" y="1519"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7Vp-6n-YbY">
             <objects>
                 <viewController storyboardIdentifier="Saturn" id="upP-eC-D1J" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NrE-9A-ulW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saturn1" translatesAutoresizingMaskIntoConstraints="NO" id="c0V-mg-GiE">
-                                <rect key="frame" x="10" y="158" width="394" height="428"/>
+                                <rect key="frame" x="10" y="158" width="355" height="359"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKM-bi-C3p">
-                                <rect key="frame" x="0.0" y="70" width="414" height="48"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="5bZ-W3-omv"/>
                                 </constraints>
@@ -392,14 +502,14 @@
             <objects>
                 <viewController storyboardIdentifier="Uranus" id="39A-yV-9hz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fMA-jj-NoU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uranus1" translatesAutoresizingMaskIntoConstraints="NO" id="nj3-di-le4">
-                                <rect key="frame" x="10" y="158" width="394" height="428"/>
+                                <rect key="frame" x="10" y="158" width="355" height="359"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uranus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUO-yX-ymw">
-                                <rect key="frame" x="0.0" y="70" width="414" height="48"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="7nl-ae-16B"/>
                                 </constraints>
@@ -432,14 +542,14 @@
             <objects>
                 <viewController storyboardIdentifier="Neptune" id="Byc-uo-RuS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XQn-H2-l94">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neptune1" translatesAutoresizingMaskIntoConstraints="NO" id="Juy-T2-tgk">
-                                <rect key="frame" x="10" y="158" width="394" height="428"/>
+                                <rect key="frame" x="10" y="157.99999999999997" width="355.00000000000006" height="359.00000000000006"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neptune" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Os-0g-9uP">
-                                <rect key="frame" x="0.0" y="70" width="414" height="48"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="g8b-6a-MNx"/>
                                 </constraints>
@@ -472,14 +582,14 @@
             <objects>
                 <viewController storyboardIdentifier="Pluto" id="y9q-Kt-EoM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MHT-L2-IXg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pluto1" translatesAutoresizingMaskIntoConstraints="NO" id="Enp-GJ-18o">
-                                <rect key="frame" x="10" y="158" width="394" height="428"/>
+                                <rect key="frame" x="10" y="158" width="355.00000000000006" height="359"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pluto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYC-gd-5wg">
-                                <rect key="frame" x="0.0" y="70" width="414" height="48"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="MFT-bM-Jq5"/>
                                 </constraints>
@@ -510,15 +620,15 @@
     </scenes>
     <resources>
         <image name="Cosmos" width="381" height="151"/>
-        <image name="earth1" width="892.33331298828125" height="897.33331298828125"/>
+        <image name="earth1" width="892" height="897"/>
         <image name="jupiter1" width="260" height="259"/>
-        <image name="mars1" width="633.33331298828125" height="632.66668701171875"/>
-        <image name="mercury1" width="650.66668701171875" height="650.66668701171875"/>
+        <image name="mars1" width="633" height="632.5"/>
+        <image name="mercury1" width="650.5" height="650.5"/>
         <image name="neptune1" width="347" height="347"/>
         <image name="pluto1" width="374" height="373"/>
-        <image name="saturn1" width="1303.3333740234375" height="518.66668701171875"/>
-        <image name="sun1" width="341.33334350585938" height="341.33334350585938"/>
-        <image name="uranus1" width="67.666664123535156" height="66.333335876464844"/>
-        <image name="venus1" width="150" height="150.33332824707031"/>
+        <image name="saturn1" width="1303" height="518.5"/>
+        <image name="sun1" width="341" height="341"/>
+        <image name="uranus1" width="67.5" height="66"/>
+        <image name="venus1" width="150" height="150"/>
     </resources>
 </document>
