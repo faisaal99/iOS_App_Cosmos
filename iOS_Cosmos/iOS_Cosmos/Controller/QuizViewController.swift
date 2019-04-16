@@ -22,7 +22,7 @@ class QuizViewController: UIViewController {
     var questionIndex: Int = 0
     var questions = QuestionLibrary().list
     var totalCorrect: Int = 0 // This button keeps the value for the amount of correct answers the person got
-    
+    var test = 0
     // MARK: - ViewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +42,7 @@ class QuizViewController: UIViewController {
         } else {
             // When the quiz is finished
             // Wait for 1.5 seconds before showing the leaderboard screen
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                 self.performSegue(withIdentifier: "quizFinished", sender: self)
             }
         }
@@ -82,6 +82,11 @@ class QuizViewController: UIViewController {
             let leaderboardVC = segue.destination as! LeaderboardViewController
             leaderboardVC.pointsScored = totalCorrect
         }
+    }
+    
+    // When the leaderboard page is finished
+    func gotDismissed() {
+        dismiss(animated: true, completion: nil)
     }
 
 }

@@ -24,15 +24,9 @@ class LeaderboardViewController: UIViewController {
         lblCorrectAnswers.text = "You Got \(pointsScored)/10 Correct!"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Dismiss
+    //This will dismiss both this VC and the previous VC
+    @IBAction func doneWithLeaderboard(_ sender: UIButton) {
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }
-    */
-
 }
