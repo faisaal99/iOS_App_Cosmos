@@ -10,12 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: - Object References
     @IBOutlet weak var btnContinue: UIButton!
     @IBOutlet weak var cosmosLogo: UIImageView! // COSMOS Image Logo
     
+    // MARK: - Global Variables
     var titleCenterX: CGFloat?
     var titleCenterY: CGFloat?
     
+    //MARK: - ViewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +33,7 @@ class ViewController: UIViewController {
         btnContinue.alpha = 1
     }
     
+    //MARK: - Continue
     @IBAction func continueButtonPressed(_ sender: Any) {
         
         // Animates the logo to the top (withDuration controls the length of the animation in seconds)

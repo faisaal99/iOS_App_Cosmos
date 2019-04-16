@@ -10,6 +10,7 @@ import UIKit
 
 class QuizViewController: UIViewController {
 
+    // MARK: - Object references
     @IBOutlet weak var lblQuestion: UILabel!
     @IBOutlet weak var lblProgress: UILabel!
     @IBOutlet weak var btnAnswer1: UIButton!
@@ -17,43 +18,40 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var btnAnswer3: UIButton!
     @IBOutlet weak var btnAnswer4: UIButton!
     
+    // MARK: - Variables (Global)
     var questionIndex: Int = 0
     var questions = QuestionLibrary().list
     var totalCorrect: Int = 0 // This button keeps the value for the amount of correct answers the person got
     
+    // MARK: - ViewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
         
         updateTextFields()
-        //print(questions[0].answers.count)
     }
     
+    //MARK: - Pressing a button
     // When any of the buttons are pressed
     @IBAction func answerPressed(_ sender: UIButton) {
-        //questionIndex += 1
         
         if questionIndex < questions.count - 1 {
-            //print("Sender.tag is: \(sender.tag)") // Only for debugging
             checkIfCorrect(buttonIndex: sender.tag)
             questionIndex += 1
             updateTextFields()
             
         } else {
             // When the quiz is finished
-            print("You finished!")
-            performSegue(withIdentifier: "quizFinished", sender: self)
+            // Wait for 1.5 seconds before showing the leaderboard screen
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                self.performSegue(withIdentifier: "quizFinished", sender: self)
+            }
         }
     }
     
     // Update the text fields for the question and buttons (answers)
     func updateTextFields() {
-        print("The Answers are: \(questions[questionIndex].answers[0].answerString) (\(questions[questionIndex].answers[0].isCorrect))")
-        print("The Answers are: \(questions[questionIndex].answers[1].answerString) (\(questions[questionIndex].answers[1].isCorrect))")
-        print("The Answers are: \(questions[questionIndex].answers[2].answerString) (\(questions[questionIndex].answers[2].isCorrect))")
-        print("The Answers are: \(questions[questionIndex].answers[3].answerString) (\(questions[questionIndex].answers[3].isCorrect))")
-        
         lblQuestion.text = questions[questionIndex].questionString
-        lblProgress.text = "\(questionIndex + 1) / 10"
+        lblProgress.text = "Question nr.: \(questionIndex + 1) / 10"
         
         btnAnswer1.setTitle(questions[questionIndex].answers[0].answerString, for: .normal)
         btnAnswer2.setTitle(questions[questionIndex].answers[1].answerString, for: .normal)
@@ -63,32 +61,27 @@ class QuizViewController: UIViewController {
     
     // Checks if the answer is correct. If so, it updates the correct answers varible.
     func checkIfCorrect(buttonIndex: Int) {
-        print("The value passed through was: \(buttonIndex) and that is: \(questions[questionIndex].answers[buttonIndex].answerString)")
         let correctAnswer: Bool = questions[questionIndex].answers[buttonIndex].isCorrect
         
         if correctAnswer == true {
-            print("Correct")
-            totalCorrect += 1
+            totalCorrect += 1 // Correct
         } else {
-            print("False")
+            // False
         }
     }
     
+    // MARK: - Quitting the Quiz
+    @IBAction func quitQuizPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    // MARK: - Navigation
     // When the quiz finishes, send data to leaderboard screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "quizFinished" {
-            
+            let leaderboardVC = segue.destination as! LeaderboardViewController
+            leaderboardVC.pointsScored = totalCorrect
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

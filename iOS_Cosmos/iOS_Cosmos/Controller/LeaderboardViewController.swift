@@ -10,12 +10,18 @@ import UIKit
 
 class LeaderboardViewController: UIViewController {
 
+    //MARK: - Object References
     @IBOutlet weak var lblCorrectAnswers: UILabel!
     
+    //MARK: - Global Variables
+    var pointsScored = 0
+    
+    //MARK: - ViewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        lblCorrectAnswers.text = "You Got \(pointsScored)/10 Correct!"
     }
     
 
