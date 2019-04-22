@@ -10,13 +10,15 @@ import UIKit
 
 class PlanetInfoViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
     }
     
-    
-
     @IBAction func exitInfoPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }

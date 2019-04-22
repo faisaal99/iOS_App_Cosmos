@@ -12,6 +12,10 @@
 		6182388F226482EA00F02741 /* QuestionLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6182388E226482EA00F02741 /* QuestionLibrary.swift */; };
 		87380E922265D4E200405AFF /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87380E912265D4E200405AFF /* QuizViewController.swift */; };
 		87380E942265EDDE00405AFF /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87380E932265EDDE00405AFF /* LeaderboardViewController.swift */; };
+		8769B340226DF86F00B394AB /* iOS_Cosmos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8769B33E226DF86F00B394AB /* iOS_Cosmos.xcdatamodeld */; };
+		8769B34C226E0AF500B394AB /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8769B34B226E0AF500B394AB /* PersistenceService.swift */; };
+		8769B34F226E0B9900B394AB /* PlayHistory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8769B34D226E0B9900B394AB /* PlayHistory+CoreDataClass.swift */; };
+		8769B350226E0B9900B394AB /* PlayHistory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8769B34E226E0B9900B394AB /* PlayHistory+CoreDataProperties.swift */; };
 		87A2609F22665FB900C5C3CE /* PlanetInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A2609E22665FB900C5C3CE /* PlanetInfoViewController.swift */; };
 		87A8362A2238577B0039AC2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A836292238577B0039AC2D /* AppDelegate.swift */; };
 		87A8362C2238577B0039AC2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8362B2238577B0039AC2D /* ViewController.swift */; };
@@ -19,6 +23,9 @@
 		87A836312238577C0039AC2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A836302238577C0039AC2D /* Assets.xcassets */; };
 		87A836342238577C0039AC2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A836322238577C0039AC2D /* LaunchScreen.storyboard */; };
 		87CDC7E522622F99003EF0EA /* MainMenuPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CDC7E422622F99003EF0EA /* MainMenuPageController.swift */; };
+		87DC3B50226B137A00B09527 /* correctSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87DC3B4F226B137A00B09527 /* correctSound.mp3 */; };
+		87DC3B52226B138000B09527 /* wrongSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87DC3B51226B138000B09527 /* wrongSound.mp3 */; };
+		87DC3B57226B323000B09527 /* planetData.json in Resources */ = {isa = PBXBuildFile; fileRef = 87DC3B56226B323000B09527 /* planetData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +34,10 @@
 		6182388E226482EA00F02741 /* QuestionLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionLibrary.swift; sourceTree = "<group>"; };
 		87380E912265D4E200405AFF /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		87380E932265EDDE00405AFF /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		8769B33F226DF86F00B394AB /* iOS_Cosmos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Cosmos.xcdatamodel; sourceTree = "<group>"; };
+		8769B34B226E0AF500B394AB /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		8769B34D226E0B9900B394AB /* PlayHistory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlayHistory+CoreDataClass.swift"; path = "iOS_Cosmos/PlayHistory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8769B34E226E0B9900B394AB /* PlayHistory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlayHistory+CoreDataProperties.swift"; path = "iOS_Cosmos/PlayHistory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		87A2609E22665FB900C5C3CE /* PlanetInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetInfoViewController.swift; sourceTree = "<group>"; };
 		87A836262238577B0039AC2D /* iOS_Cosmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Cosmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A836292238577B0039AC2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +47,9 @@
 		87A836332238577C0039AC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87A836352238577C0039AC2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87CDC7E422622F99003EF0EA /* MainMenuPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuPageController.swift; sourceTree = "<group>"; };
+		87DC3B4F226B137A00B09527 /* correctSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctSound.mp3; sourceTree = "<group>"; };
+		87DC3B51226B138000B09527 /* wrongSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongSound.mp3; sourceTree = "<group>"; };
+		87DC3B56226B323000B09527 /* planetData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planetData.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,9 +63,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8769B33D226DF84600B394AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8769B33E226DF86F00B394AB /* iOS_Cosmos.xcdatamodeld */,
+				8769B34B226E0AF500B394AB /* PersistenceService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		87A8361D2238577B0039AC2D = {
 			isa = PBXGroup;
 			children = (
+				8769B34D226E0B9900B394AB /* PlayHistory+CoreDataClass.swift */,
+				8769B34E226E0B9900B394AB /* PlayHistory+CoreDataProperties.swift */,
 				87A836282238577B0039AC2D /* iOS_Cosmos */,
 				87A836272238577B0039AC2D /* Products */,
 			);
@@ -69,13 +94,15 @@
 			isa = PBXGroup;
 			children = (
 				87A836352238577C0039AC2D /* Info.plist */,
-				87A8363F223857CE0039AC2D /* Supporting Files */,
 				87A8363D2238579F0039AC2D /* Controller */,
+				8769B33D226DF84600B394AB /* Model */,
 				87A8363B223857910039AC2D /* View */,
+				87DC3B4E226B12FD00B09527 /* Sounds */,
 				87A836302238577C0039AC2D /* Assets.xcassets */,
 				6182388A226480C100F02741 /* Question.swift */,
 				6182388C2264814A00F02741 /* Answer.swift */,
 				6182388E226482EA00F02741 /* QuestionLibrary.swift */,
+				87DC3B56226B323000B09527 /* planetData.json */,
 			);
 			path = iOS_Cosmos;
 			sourceTree = "<group>";
@@ -102,11 +129,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		87A8363F223857CE0039AC2D /* Supporting Files */ = {
+		87DC3B4E226B12FD00B09527 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				87DC3B51226B138000B09527 /* wrongSound.mp3 */,
+				87DC3B4F226B137A00B09527 /* correctSound.mp3 */,
 			);
-			path = "Supporting Files";
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				87A836342238577C0039AC2D /* LaunchScreen.storyboard in Resources */,
+				87DC3B57226B323000B09527 /* planetData.json in Resources */,
+				87DC3B50226B137A00B09527 /* correctSound.mp3 in Resources */,
+				87DC3B52226B138000B09527 /* wrongSound.mp3 in Resources */,
 				87A836312238577C0039AC2D /* Assets.xcassets in Resources */,
 				87A8362F2238577B0039AC2D /* Main.storyboard in Resources */,
 			);
@@ -183,13 +215,17 @@
 			files = (
 				87A8362C2238577B0039AC2D /* ViewController.swift in Sources */,
 				87A2609F22665FB900C5C3CE /* PlanetInfoViewController.swift in Sources */,
+				8769B350226E0B9900B394AB /* PlayHistory+CoreDataProperties.swift in Sources */,
 				6182388F226482EA00F02741 /* QuestionLibrary.swift in Sources */,
+				8769B34C226E0AF500B394AB /* PersistenceService.swift in Sources */,
 				87380E922265D4E200405AFF /* QuizViewController.swift in Sources */,
 				87380E942265EDDE00405AFF /* LeaderboardViewController.swift in Sources */,
 				6182388B226480C100F02741 /* Question.swift in Sources */,
 				6182388D2264814A00F02741 /* Answer.swift in Sources */,
 				87A8362A2238577B0039AC2D /* AppDelegate.swift in Sources */,
 				87CDC7E522622F99003EF0EA /* MainMenuPageController.swift in Sources */,
+				8769B34F226E0B9900B394AB /* PlayHistory+CoreDataClass.swift in Sources */,
+				8769B340226DF86F00B394AB /* iOS_Cosmos.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +425,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8769B33E226DF86F00B394AB /* iOS_Cosmos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8769B33F226DF86F00B394AB /* iOS_Cosmos.xcdatamodel */,
+			);
+			currentVersion = 8769B33F226DF86F00B394AB /* iOS_Cosmos.xcdatamodel */;
+			path = iOS_Cosmos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 87A8361E2238577B0039AC2D /* Project object */;
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class QuizViewController: UIViewController {
 
@@ -23,9 +24,28 @@ class QuizViewController: UIViewController {
     var questions = QuestionLibrary().list
     var totalCorrect: Int = 0 // This button keeps the value for the amount of correct answers the person got
     var test = 0
+    
+    //MARK: - AudioPlayer varibales
+    var audioPlayerCorrect: AVAudioPlayer?
+    var audioPlayerWrong: AVAudioPlayer?
+    
     // MARK: - ViewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Setup correct audioPlayer
+        guard let path = Bundle.main.path(forResource: "correctSound", ofType: "mp3") else { return }
+        let url = URL(fileURLWithPath: path)
+        audioPlayerCorrect = try?  AVAudioPlayer(contentsOf: url, fileTypeHint: nil)
+        
+        //Setup wrong audioPlayer
+        guard let path2 = Bundle.main.path(forResource: "wrongSound", ofType: "mp3") else { return }
+        let url2 = URL(fileURLWithPath: path2)
+        audioPlayerWrong = try?  AVAudioPlayer(contentsOf: url2, fileTypeHint: nil)
+        
+        //Preload buffer
+        audioPlayerCorrect?.prepareToPlay()
+        audioPlayerWrong?.prepareToPlay()
         
         updateTextFields()
     }
@@ -43,6 +63,8 @@ class QuizViewController: UIViewController {
             // When the quiz is finished
             // Wait for 1.5 seconds before showing the leaderboard screen
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                self.audioPlayerCorrect?.stop()
+                self.audioPlayerWrong?.stop()
                 self.performSegue(withIdentifier: "quizFinished", sender: self)
             }
         }
@@ -64,9 +86,14 @@ class QuizViewController: UIViewController {
         let correctAnswer: Bool = questions[questionIndex].answers[buttonIndex].isCorrect
         
         if correctAnswer == true {
-            totalCorrect += 1 // Correct
+            // Correct
+            audioPlayerCorrect?.stop()
+            audioPlayerCorrect?.play()
+            totalCorrect += 1
         } else {
             // False
+            audioPlayerWrong?.stop()
+            audioPlayerWrong?.play()
         }
     }
     
@@ -82,11 +109,6 @@ class QuizViewController: UIViewController {
             let leaderboardVC = segue.destination as! LeaderboardViewController
             leaderboardVC.pointsScored = totalCorrect
         }
-    }
-    
-    // When the leaderboard page is finished
-    func gotDismissed() {
-        dismiss(animated: true, completion: nil)
     }
 
 }
